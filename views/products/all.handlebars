@@ -1,0 +1,20 @@
+<div class="row justify-content-center align-items-center my-5">
+  <div class="col-10">
+    <h2 class="text-center">Produtos</h2>
+    <div class="row align-items-center">
+        {{#each products}}
+            <div class="col-11 col-md-3 text-center">
+                <img src="{{this.image}}" alt="{{this.name}}" class="w-100 rounded-circle shadow">
+                <p class="m-0 fw-bold">{{this.name}}</p>
+                <p class="m-0">{{this.price}}</p>
+                <div class="my-2">
+                  <a href="/products/{{this._id}}" class="btn btn-dark shadow w-100">Saiba mais</a>
+                </div>
+                <div class="my-2">
+                  <a href="/products/edit/{{this._id}}" class="btn btn-dark shadow w-100">Editar</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+  </div>
+</div>
