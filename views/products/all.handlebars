@@ -1,12 +1,12 @@
 <div class="row justify-content-center align-items-center my-5">
   <div class="col-10">
     <h2 class="text-center">Produtos</h2>
-    <div class="row align-items-center">
+    <div class="row justify-content-center align-items-center">
         {{#each products}}
-            <div class="col-11 col-md-3 text-center">
+            <div class="col-11 col-md-3 text-center my-5">
                 <img src="{{this.image}}" alt="{{this.name}}" class="w-100 rounded-circle shadow">
-                <p class="m-0 fw-bold">{{this.name}}</p>
-                <p class="m-0">{{this.price}}</p>
+                <p class="mx-0 mt-4 mb-2 fs-4 fw-bold">{{this.name}}</p>
+                <p class="mx-0 mb-4 fs-4">{{this.price}}</p>
                 <div class="my-2">
                   <a href="/products/{{this._id}}" class="btn btn-dark shadow w-100">Saiba mais</a>
                 </div>
